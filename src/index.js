@@ -9,11 +9,17 @@ import logger from 'redux-logger';
 
 const feedbackReducer = (state = [], action) => {
     console.log(state);
+    switch (action.type) {
+        case 'ADD_FEELING':
+            return [...state, action.payload];
+        default:
+            return state;
+    }
 }
 
 const reduxStore = createStore(
     combineReducers({
-    //   feedbackReducer
+      feedbackReducer
     }),
     applyMiddleware(logger)
   );
