@@ -4,6 +4,7 @@ import './App.css';
 import Feeling from '../Feeling/Feeling';
 import {HashRouter as Router, Route} from 'react-router-dom';
 import Understanding from '../Understanding/Understanding';
+import Supported from '../Supported/Supported';
 
 class App extends Component {
   render() {
@@ -15,11 +16,11 @@ class App extends Component {
             <h4><i>Don't forget it!</i></h4>
           </header>
           <br/>
-          {/* <Feeling/> */}
         </div>
 
         <Route exact path="/" component={Feeling}/>
         <Route path="/understanding" component={Understanding}/>
+        <Route path="/supported" component={Supported}/>
       </Router>
     );
   }

@@ -7,11 +7,12 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'; 
 import logger from 'redux-logger';
 
-const feedbackReducer = (state = [], action) => {
-    console.log(state);
+const feedbackReducer = (state = {}, action) => {
     switch (action.type) {
-        case 'ADD_FEELING':
-            return [...state, action.payload];
+        case 'ADD_FEELINGS':
+            return {...state, feelings: action.payload};
+        case 'ADD_UNDERSTANDING':
+            return {...state, understanding: action.payload};
         default:
             return state;
     }

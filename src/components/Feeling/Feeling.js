@@ -9,7 +9,7 @@ class Feeling extends Component {
     
     handleSubmit = () => {
         console.log(this.state.feeling);
-        this.props.dispatch({type: 'ADD_FEELING', payload: this.state.feeling})
+        this.props.dispatch({type: 'ADD_FEELINGS', payload: this.state.feeling})
         this.props.history.push('/understanding');
     }
 
