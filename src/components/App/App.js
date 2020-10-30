@@ -5,7 +5,8 @@ import Feeling from '../Feeling/Feeling';
 import {HashRouter as Router, Route} from 'react-router-dom';
 import Understanding from '../Understanding/Understanding';
 import Supported from '../Supported/Supported';
-import Review from '../Review/Review'
+import Review from '../Review/Review';
+import Comments from '../Comments/Comments';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
         <Route path="/understanding" component={Understanding}/>
         <Route path="/supported" component={Supported}/>
         <Route path="/review" component={Review}/>
+        <Route path="/comments" component={Comments}/>
       </Router>
     );
   }

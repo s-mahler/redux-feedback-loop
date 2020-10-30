@@ -9,7 +9,7 @@ class Supported extends Component {
     handleSubmit = () => {
         console.log(this.state.feeling);
         this.props.dispatch({type: 'ADD_SUPPORTED', payload: this.state.feeling})
-        this.props.history.push('/review');
+        this.props.history.push('/comments');
     }
 
     handleChange = (event) => {
