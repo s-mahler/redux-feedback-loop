@@ -21,7 +21,7 @@ class Supported extends Component {
     render () {
         return (
             <>
-            <p>Did ya understand it?</p>
+            <p>Do you feel supported?</p>
             <input onChange={this.handleChange} type="number" placeholder="1 - 5"/>
             <button onClick={this.handleSubmit}>NEXT</button>
             </>
