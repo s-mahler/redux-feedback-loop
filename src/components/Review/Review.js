@@ -17,8 +17,8 @@ class Review extends Component {
             <>
             <p>REVIEW</p>
             <div>
-                {Object.keys(this.props.reduxStore.feedbackReducer).map((key) => {
-                    return <div>{key}: {this.props.reduxStore.feedbackReducer[key]}</div>;
+                {Object.keys(this.props.reduxStore.feedbackReducer).map((key, index) => {
+                    return <div key={index}>{key}: {this.props.reduxStore.feedbackReducer[key]}</div>;
                 })}
             </div>
             <button onClick={this.handleSubmit}>SUBMIT</button>

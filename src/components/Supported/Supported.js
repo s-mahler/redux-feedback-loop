@@ -7,9 +7,12 @@ class Supported extends Component {
     }
     
     handleSubmit = () => {
-        console.log(this.state.feeling);
-        this.props.dispatch({type: 'ADD_SUPPORTED', payload: this.state.feeling})
-        this.props.history.push('/comments');
+        if (this.state.feeling < 1 || this.state.feeling > 5) {
+            alert('Enter a value between 1 and 5');
+        } else {
+            this.props.dispatch({type: 'ADD_SUPPORTED', payload: this.state.feeling})
+            this.props.history.push('/comments');
+        }
     }
 
     handleChange = (event) => {

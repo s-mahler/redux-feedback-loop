@@ -10,13 +10,13 @@ import logger from 'redux-logger';
 const feedbackReducer = (state = {}, action) => {
     switch (action.type) {
         case 'ADD_FEELINGS':
-            return {...state, feelings: action.payload};
+            return {...state, Feeling: action.payload};
         case 'ADD_UNDERSTANDING':
-            return {...state, understanding: action.payload};
+            return {...state, Understanding: action.payload};
         case 'ADD_SUPPORTED':
-            return {...state, supported: action.payload};
+            return {...state, Support: action.payload};
         case 'ADD_COMMENTS':
-            return {...state, comments: action.payload};
+            return {...state, Comments: action.payload};
         default:
             return state;
     }
