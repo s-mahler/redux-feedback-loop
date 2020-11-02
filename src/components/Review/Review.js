@@ -16,12 +16,12 @@ class Review extends Component {
     render () {
         return (
             <div className="form">
-            <p>Review your submissions</p>
-            <div>
+            <h3>Review your submissions</h3>
+            <ul>
                 {Object.keys(this.props.reduxStore.feedbackReducer).map((key, index) => {
-                    return <div key={index}>{key}: {this.props.reduxStore.feedbackReducer[key]}</div>;
+                    return <li key={index}>{key}: {this.props.reduxStore.feedbackReducer[key]}</li>;
                 })}
-            </div>
+            </ul>
             <button onClick={this.handleSubmit}>SUBMIT</button>
             </div>
         )

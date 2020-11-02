@@ -7,7 +7,6 @@ class Comments extends Component {
     }
     
     handleSubmit = () => {
-        console.log(this.state.feeling);
         this.props.dispatch({type: 'ADD_COMMENTS', payload: this.state.feeling})
         this.props.history.push('/review');
     }
