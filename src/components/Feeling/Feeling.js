@@ -24,11 +24,11 @@ class Feeling extends Component {
     
     render () {
         return (
-            <>
-            <p>How are you feeling today?</p>
-            <input onChange={this.handleChange} type="number" placeholder="1 - 5"/>
-            <button onClick={this.handleSubmit}>NEXT</button>
-            </>
+            <div className="form">
+                <p>How are you feeling today?</p>
+                <input onChange={this.handleChange} type="number" placeholder="1 - 5"/>
+                <button onClick={this.handleSubmit}>NEXT</button>
+            </div>
         )
     }
 }

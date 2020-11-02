@@ -23,11 +23,11 @@ class Understanding extends Component {
 
     render () {
         return (
-            <>
-            <p>Did ya understand it?</p>
-            <input onChange={this.handleChange} type="number" placeholder="1 - 5"/>
-            <button onClick={this.handleSubmit}>NEXT</button>
-            </>
+            <div className="form">
+                <p>Did you understand the material?</p>
+                <input onChange={this.handleChange} type="number" placeholder="1 - 5"/>
+                <button onClick={this.handleSubmit}>NEXT</button>
+            </div>
 
         )
     }

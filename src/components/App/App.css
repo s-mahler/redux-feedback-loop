@@ -17,3 +17,13 @@
   font-size: large;
 }
 
+.form {
+  text-align: center;
+}
+
+button {
+  border-radius: 20px;
+  background-color: #033076;
+  color: white;
+}
+

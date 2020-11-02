@@ -20,11 +20,11 @@ class Comments extends Component {
 
     render () {
         return (
-            <>
-            <p>Any additional comments?</p>
-            <input onChange={this.handleChange} type="text" placeholder="Additional comments"/>
-            <button onClick={this.handleSubmit}>NEXT</button>
-            </>
+            <div className="form">
+                <p>Any additional comments?</p>
+                <input onChange={this.handleChange} type="text" placeholder="Additional comments"/>
+                <button onClick={this.handleSubmit}>NEXT</button>
+            </div>
 
         )
     }

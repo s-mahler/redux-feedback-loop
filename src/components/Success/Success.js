@@ -9,10 +9,10 @@ class Supported extends Component {
 
     render () {
         return (
-            <>
-            <p>Thank you for your response</p>
-            <button onClick={this.handleSubmit}>Leave New Feedback</button>
-            </>
+            <div className="form">
+                <p>Thank you for your response</p>
+                <button onClick={this.handleSubmit}>Leave New Feedback</button>
+            </div>
 
         )
     }
