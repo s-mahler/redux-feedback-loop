@@ -8,7 +8,10 @@ This project is a multipage feedback form, taking in user feedback and sending i
 
 ## Screen Shot
 
+Sample page of the form
 ![form](README-images/feedback_form.png)
+
+Completed feedback
 ![complete](README-images/feedback_complete.png)
 
 ### Prerequisites
