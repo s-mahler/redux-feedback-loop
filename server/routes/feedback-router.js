@@ -4,10 +4,12 @@ const pool = require('../modules/pool');
 
 router.post('/',  (req, res) => {
     let feedback = req.body;
-    console.log(`feedback`, feedback);
   
+    // SQL query text to add the feedback oject to the database
     let queryText = `INSERT INTO "feedback" ("feeling", "understanding", "support", "comments")
                      VALUES ($1, $2, $3, $4);`;
+
+    // Sanitzed inputs
     pool.query(queryText, [feedback.Feeling, feedback.Understanding, feedback.Support, feedback.Comments])
       .then(result => {
         res.sendStatus(200);

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import './App.css';
 import Feeling from '../Feeling/Feeling';
 import {HashRouter as Router, Route} from 'react-router-dom';
@@ -21,6 +20,8 @@ class App extends Component {
           <br/>
         </div>
 
+
+        {/* Routes being used on each page */}
         <Route exact path="/" component={Feeling}/>
         <Route path="/understanding" component={Understanding}/>
         <Route path="/supported" component={Supported}/>

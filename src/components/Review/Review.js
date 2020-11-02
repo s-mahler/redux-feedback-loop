@@ -17,6 +17,9 @@ class Review extends Component {
         return (
             <div className="form">
             <h3>Review your submissions</h3>
+            {/* Object.keys was used here to map an object rather than an array */}
+            {/* The list items are locked into the name of the key of the object */}
+                {/* Would be better if that was editable */}
             <ul>
                 {Object.keys(this.props.reduxStore.feedbackReducer).map((key, index) => {
                     return <li key={index}>{key}: {this.props.reduxStore.feedbackReducer[key]}</li>;

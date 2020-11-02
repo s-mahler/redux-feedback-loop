@@ -7,6 +7,8 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'; 
 import logger from 'redux-logger';
 
+// Reducer to add feedback to an object
+// Switch statement determines which key gets created and assigned a value
 const feedbackReducer = (state = {}, action) => {
     switch (action.type) {
         case 'ADD_FEELINGS':
@@ -22,6 +24,7 @@ const feedbackReducer = (state = {}, action) => {
     }
 }
 
+// Didn't end up needing combineReducers, but it was left in incase more reducers are need in the future
 const reduxStore = createStore(
     combineReducers({
       feedbackReducer

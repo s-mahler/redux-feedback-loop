@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 class Supported extends Component {
 
+    // Reset the user back to the default page
     handleSubmit = () => {
         this.props.history.push('/');
     }
